@@ -1,0 +1,33 @@
+# Python
+# -----------------------------------------------------------
+
+# Bỏ qua các tệp bytecode của Python
+*.pyc
+__pycache__/
+
+# Bỏ qua toàn bộ thư mục môi trường ảo
+# Đây là nguyên nhân chính gây ra lỗi file lớn (torch_cpu.dll)
+# Bạn nên loại bỏ venv_sentiment ra khỏi Git
+venv_sentiment/
+
+# Bỏ qua các tệp cấu hình môi trường/phát triển
+.env
+.flaskenv
+
+# Bỏ qua các tệp cơ sở dữ liệu tạm thời/tạo ra trong quá trình chạy
+# Trong trường hợp của bạn:
+*.db
+*.sqlite3
+
+# Thư mục build và phân phối
+dist/
+build/
+*.egg-info/
+.tox/
+
+# IDE files (Tùy chọn: nếu bạn dùng PyCharm)
+# Bỏ qua thư mục .idea/ nếu bạn không muốn chia sẻ cài đặt IDE
+.idea/
+
+# macOS files (Nếu bạn làm việc trên macOS)
+.DS_Store
